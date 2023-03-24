@@ -1,0 +1,14 @@
+.dark {
+  background-color: black;
+  color: white;
+}
+
+.light {
+  background-color: white;
+  color: black;
+  font-style: italic;
+}
+
+.highlighted {
+  border: thick dotted red;
+}
