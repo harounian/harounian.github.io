@@ -1,24 +1,42 @@
+body {
+  background-color: #1f1f1f;
+}
+
+
+
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #323232;
+  background-color: #1f1f1f;
 }
 
 li {
   float: right;
 }
 
+
+
 li a {
   display: block;
   color: white;
+  font-style: italic;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
+/* Change the link color to (black) on hover */
 li a:hover {
-  background-color: #111;
+  background-color: #000000;
+}
+
+
+/* home logo button
+.logodiv {
+  width:5000px; 
+  margin:auto;
 }
