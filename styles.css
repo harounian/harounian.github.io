@@ -12,13 +12,9 @@ ul {
   background-color: #1f1f1f;
 }
 
-li {
-  float: right;
-}
-
-
 
 li a {
+  float: right;
   display: block;
   color: white;
   font-style: italic;
@@ -29,9 +25,10 @@ li a {
   text-decoration: none;
 }
 
-/* Change the link color to (black) on hover */
+
 li a:hover {
-  background-color: #000000;
+  /*background-color: #000000;*/
+  text-decoration: underline;
 }
 
 
