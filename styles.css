@@ -16,18 +16,18 @@ body {
 }
 
 footer {
-  margin-top: 1000px;
-  align: left;
+  margin-top: 100rem;
+  margin-bottom: 2rem;
+  text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   font-size: .8rem;
-  padding: 4rem 0 2rem
 }
 
 #navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem;
+  padding: 0.5rem;
 }
 
 #navbar-links {
@@ -42,8 +42,9 @@ footer {
 }
 
 .navbar-link {
+  margin: 20;
   list-style: none;
-  margin: 1rem;
+  margin: 0.625rem;
 }
 
 .navbar-link-text {
@@ -61,6 +62,15 @@ footer {
 } 
 
 #about {
-  width: 1000px;
   margin: auto;
+  margin-top: 10rem;
+  width: 1000px;
+  
+}
+
+#about-header {
+}
+
+#about-text {
+  font-size: 22px;
 }
