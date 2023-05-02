@@ -8,9 +8,19 @@ html {
 }
 
 body {
-  margin: 0;
-  padding: 0;
   background-color: #1f1f1f;
+  color: white;
+  font-style: italic;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+}
+
+footer {
+  margin-top: 1000px;
+  align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .8rem;
+  padding: 4rem 0 2rem
 }
 
 #navbar {
@@ -47,5 +57,10 @@ body {
 }
 
 .navbar-link-text:hover {
-  text-decoration: underline !important;
+  text-decoration: underline;
 } 
+
+#about {
+  width: 1000px;
+  margin: auto;
+}
