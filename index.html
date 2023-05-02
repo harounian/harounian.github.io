@@ -1,32 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title> Joseph Harounian | Portfolio </title>
+  <title> Joseph Harounian | Home </title>
   <link rel="shortcut icon" type="image/x-icon" href="/Assets/Images/JH logo/JH PSD.png" />
+  <script src="./script.js" defer></script>
   <link rel="stylesheet" href="styles.css">
-
-  <!-- home logo
-    
-     <div class="logodiv">
-    <a href="index.html">
-    <img class="logo" src="/Assets/Images/JH logo/JH PSD.png"></a>
-  </div>
--->
   
 
+
+  <style>
+    @media (max-width: 1000px) {
+      #logo {
+        height: 80px;
+        width: 80px;
+      }
+      .navbar-link a {
+        font-size: 2rem;
+      }
+      .navbar-link a:hover {
+        text-decoration: underline !important;
+      }
+    }
+  </style>
 </head>
+  <body>
+    <div id="navbar">
+      <div id="logo-wrapper">
+        <a href="./index.html"><img src="./Assets/Images/JH logo/JH Home.png" id="logo"/></a>
+      </div>
+      <div id="navbar-links">
+        <li class="navbar-link">
+          <a href="./about.html" class="navbar-link-text"></a>
+        </li> 
+        <li class="navbar-link">
+          <a href="./projects.html" class="navbar-link-text"></a>
+        </li>
+        <li class="navbar-link">
+          <a href="./resume.html" class="navbar-link-text"></a>
+        </li>
+        <li class="navbar-link">
+          <a href="./contact.html" class="navbar-link-text"></a>
+        </li>
+      </div>
+    </div>  
+  </body>
 
 
-
-<body>
-<ul>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#resume">Resume</a></li>
-  <li><a href="#projects">Projects</a></li>
-  <li><a href="#about">About</a></li> 
-</ul>
-</body>
-
-
+  <footer class="footer" footer>
+    <span>Copyright © Joseph Harounian 2023</span>
+  </footer>
 
 </html>
