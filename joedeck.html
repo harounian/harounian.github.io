@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Joseph Harounian | JoeDeck </title>
+  <link rel="shortcut icon" type="image/x-icon" href="/Assets/Images/JH logo/JH PSD.png" />
+  <script src="./script.js" defer></script>
+  <link rel="stylesheet" href="styles.css">
+
+
+  <style>
+    @media (max-width: 1000px) {
+      #logo {
+        height: 80px;
+        width: 80px;
+      }
+      .navbar-link a {
+        font-size: 2rem;
+      }
+      .navbar-link a:hover {
+        text-decoration: underline !important;
+      }
+    }
+  </style>
+</head>
+  <body>
+    <div id="navbar">
+      <div id="logo-wrapper">
+        <a href="./index.html"><img src="./Assets/Images/JH logo/JH Home.png" id="logo"/></a>
+      </div>
+      <div id="navbar-links">
+        <li class="navbar-link">
+          <a href="./projects.html" class="navbar-link-text"></a>
+        </li>
+        <li class="navbar-link">
+          <a href="./resume.html" class="navbar-link-text"></a>
+        </li>
+        <li class="navbar-link">
+          <a href="./contact.html" class="navbar-link-text"></a>
+        </li>
+      </div>
+    </div>  
+
+
+      <div id="project">
+        <h1 id="project-title">JoeDeck</h1>
+        <h2 id="section-header">Description</h2>
+        <p id="project-text">The JoeDeck is a small computer peripheral device that allows users to assign macros, or pre-programmed sequences of keystrokes that can be executed with a single button press. These macros can be used for a variety of purposes, such as in-game shortcuts or automating repetitive tasks. In addition to this, it gives you the ability to adjust the volume levels of your programs and output/input devices, so you can mix/balance them to your heart's content. It's commonly used by gamers and programmers as a way to improve their productivity and efficiency.</p>
+        <br>
+        <br>
+        <h2 id="section-header">MCU</h2>
+        <p id="project-text">Powered by an Arduino Pro-Micro and an Arduino Nano</p>
+        <br>
+        <br>
+        <h2 id="section-header">Features</h2>
+        <p id="project-text">-Full qmk compatibility<br>-12 fully reprogrammable keys<br>-2 rotary encoders<br>-OLED screen<br>-USB-C port</p>
+        <br>
+        <br>
+      </div>
+
+
+      <div id="qmk-badge">
+        <a href="https://github.com/qmk/qmk_firmware">
+          <img src="Assets/Images/qmkbadge.svg" alt="QMK Badge" >
+        </a>
+      </div>
+
+  </body>
+
+  <footer class="footer" footer>
+    <span>Copyright © Joseph Harounian 2023</span>
+  </footer>
+  
+</html>

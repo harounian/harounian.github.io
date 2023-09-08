@@ -10,10 +10,9 @@ const writeAnimated = async (link, navLink) => {
 }
 
 (async () => {
-    await writeAnimated('About', navbarLinks[0]);
-    await writeAnimated('Projects', navbarLinks[1]);
-    await writeAnimated('Resume', navbarLinks[2]);
-    await writeAnimated('Contact', navbarLinks[3]);
+    await writeAnimated('Projects', navbarLinks[0]);
+    await writeAnimated('Resume', navbarLinks[1]);
+    await writeAnimated('Contact', navbarLinks[2]);
 })();
 
 
