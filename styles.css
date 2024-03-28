@@ -72,7 +72,6 @@ footer {
   font-size: 2.5rem;
 }
 
-
 #project {
   margin: auto;
   margin-top: 3rem;
@@ -104,51 +103,58 @@ footer {
   opacity: 0.8;
 }
 
+#setof3tiles {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center; 
+}
 
 .tile {
-  width: 250px;
-  height: 340px;
+  width: 400px;
+  height: 500px;
+  min-width: 400px;
+  min-height: 500px;
+  background-color: blue;
   border-radius: 25px;
   padding: 0px 10px 10px 10px;
   border: 4px solid #000000;
   background-color: #ffffff;
-  }
+  margin: 10px 10px;
+}
 
 .tile:hover{
-  border: 4px solid #0026ff;
+  /*border: 4px solid #0026ff;*/
+  opacity: 80%;
 }
 
 #tile-header{
-  font-size: 1.3rem;
+  margin-top: 200px;
+  font-size: 1.5rem;
   font-style: italic;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bolder;
   color:#000000;
   text-align: center;
 }
-
-#tile-description{
-  font-size: 0.8rem;
+ 
+#tile-description {
+  font-size: 1.1rem;
   font-style: normal;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:sans-serif;
   color:#000000;
   text-align: left;
-  margin-top: 165px;
-}
-
-#setof3tiles{
-  display: flex;
-  justify-content: space-between;
-  padding: 50px 100px 50px 100px;
+  margin-top: 10px;
 }
 
 .tag {
-  width: 60px;
-  height: 20px;
-  border-radius: 25px 25px 25px 25px;
+  width: 105px;
+  height: 30px;
+  border-radius: 30px 30px 30px 30px;
   border: 2px solid #000000;
   background-color: #ffffff;
-  font-size: 0.7rem;
+  font-size: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -156,14 +162,16 @@ footer {
   font-family: Arial, Helvetica, sans-serif;
   color:#000000;
 }
-
+/* hover fuction for tags
 .tag:hover{
   border: 2px solid #0026ff;
   color: #0026ff;
 }
-
+*/
 
 #setof3tags{
   display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
   padding: 0px 10px 0px 10px;
 }

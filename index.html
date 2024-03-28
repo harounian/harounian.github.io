@@ -6,10 +6,8 @@
   <script src="./script.js" defer></script>
   <link rel="stylesheet" href="styles.css">
   
-
-
   <style>
-    @media (max-width: 1000px) {
+    @media (max-width: 1150px) {
       #logo {
         height: 80px;
         width: 80px;
@@ -21,9 +19,15 @@
         text-decoration: underline !important;
       }
       #setof3tiles {
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
+      }
+      .tile {
+        width: 400;
+        height: 500;
       }
     }
   </style>
@@ -32,22 +36,17 @@
   <body>
     <div id="navbar">
       <div id="logo-wrapper">
-        <a href="./index.html"><img src="./Assets/Images/JH logo/JH Home.png" id="logo"/></a>
+        <a href="./"><img src="./Assets/Images/JH logo/JH Home.png" alt="HOME" id="logo"/></a>
       </div>
       <div id="navbar-links">
         <li class="navbar-link">
           <a href="./projects.html" class="navbar-link-text"></a>
         </li>
-        <li class="navbar-link">
-          <a href="./resume.html" class="navbar-link-text"></a>
-        </li>
-        <li class="navbar-link">
-          <a href="./contact.html" class="navbar-link-text"></a>
-        </li>
-      </div>
+        </div>
     </div>  
 
   <div id="setof3tiles">
+    <a href="/joedeck.html" style="text-decoration: none;">
     <div id="tile1" class="tile"> 
       <h1 id="tile-header">JoeDeck</h1> 
       <p id="tile-description">The JoeDeck is a small computer peripheral device that allows users to assign macros, or pre-programmed sequences of keystrokes that can be executed with a single button press.</p>
@@ -55,28 +54,44 @@
       <div id="setof3tags">
         <div class="tag"> <p>Arduino</p> </div>
         <div class="tag"> <p>C++</p> </div>
-        <div class="tag"> <p>Tag 2</p> </div>
+        <div class="tag"> <p>CAD</p> </div>
       </div>
         
     </div>
+  </a>
 
-
-
+  <a href="/calculator.html" style="text-decoration: none;">
     <div id="tile2" class="tile"> 
-      <h1 id="tile-header">Project Title</h1> 
-      <p id="tile-description">Tile description</p>
+      <h1 id="tile-header">Calculator</h1> 
+      <p id="tile-description">Classic calculator with mechanical switches and 7-segment display. Designed custom printed circuit board with embedded micro-controller and passive components.</p>
+    
+      <div id="setof3tags">
+        <div class="tag"> <p>PCB</p> </div>
+        <div class="tag"> <p>Arduino</p> </div>
+        <div class="tag"> <p>C++</p> </div>
+      </div>
     </div>
+  </a>
 
+  <a href="/rgb-led-matrix.html" style="text-decoration: none;">
     <div id="tile3" class="tile"> 
-      <h1 id="tile-header">Project Title</h1> 
-      <p id="tile-description">Tile description</p>
+      <h1 id="tile-header">RGB LED Matrix</h1> 
+      <p id="tile-description">10x10 matrix using WS2812B LEDs. Created custom printed circuit board for ESP32 micro-controller and power electronics. Complete with 3d printed enclosure.</p>
+    
+      <div id="setof3tags">
+        <div class="tag"> <p>PCB</p> </div>
+        <div class="tag"> <p>Arduino</p> </div>
+        <div class="tag"> <p>CAD</p> </div>
+      </div>
     </div>
+  </a>
+
   </div>
 
   </body>
 
   <footer class="footer" footer>
-    <span>Copyright © Joseph Harounian 2023</span>
+    <span>Copyright © Joseph Harounian 2024</span>
   </footer>
 
 </html>
