@@ -6,43 +6,6 @@
   <script src="./script.js" defer></script>
   <link rel="stylesheet" href="styles.css">
   
-  <style>
-    @media (max-width: 1150px) {
-      #logo {
-        height: 80px;
-        width: 80px;
-      }
-      .navbar-link a {
-        font-size: 2rem;
-      }
-      .navbar-link a:hover {
-        text-decoration: underline !important;
-      }
-      #setof3tiles {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-      .tile {
-        width: 700px;
-        height: 875px;
-        margin: 30px 30px;
-        padding: 0px 50px 0px 50px;
-      }
-      #tile-header {
-        font-size: 2.625rem;
-      }
-
-      #tile-description {
-        font-size: 1.925rem;
-      }
-
-      /*time 1.75*/
-    }
-
-  </style>
 </head>
 
   <body>
@@ -60,6 +23,8 @@
   <div id="setof3tiles">
     <a href="/joedeck.html" style="text-decoration: none;">
     <div id="tile1" class="tile"> 
+      <img src="./Assets/Images/IMG_0434.JPG" alt="joedeck" class="tile-img">
+      
       <h1 id="tile-header">JoeDeck</h1> 
       <p id="tile-description">The JoeDeck is a small computer peripheral device that allows users to assign macros, or pre-programmed sequences of keystrokes that can be executed with a single button press.</p>
       
@@ -74,6 +39,7 @@
 
   <a href="/calculator.html" style="text-decoration: none;">
     <div id="tile2" class="tile"> 
+      <img src="./Assets/Images/calculator.PNG" alt="calculator" class="tile-img">
       <h1 id="tile-header">Calculator</h1> 
       <p id="tile-description">Classic calculator with mechanical switches and 7-segment display. Designed custom printed circuit board with embedded micro-controller and passive components.</p>
     
@@ -87,6 +53,7 @@
 
   <a href="/rgb-led-matrix.html" style="text-decoration: none;">
     <div id="tile3" class="tile"> 
+      <img src="./Assets/Images/matrix.jpg" alt="matrix" class="tile-img">
       <h1 id="tile-header">RGB LED Matrix</h1> 
       <p id="tile-description">10x10 matrix using WS2812B LEDs. Created custom printed circuit board for ESP32 micro-controller and power electronics. Complete with 3d printed enclosure.</p>
     
