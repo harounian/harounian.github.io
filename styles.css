@@ -200,6 +200,15 @@ footer {
   .navbar-link a:hover {
     text-decoration: underline !important;
   }
+
+  #project {
+    margin: auto;
+    margin-top: 3rem;
+    width: auto;
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+
   #setof3tiles {
     display: flex;
     flex-wrap: wrap;
