@@ -11,6 +11,8 @@ const writeAnimated = async (link, navLink) => {
 
 (async () => {
     await writeAnimated('Projects', navbarLinks[0]);
+    await writeAnimated('Publications', navbarLinks[1]);
+    await writeAnimated('Other', navbarLinks[2]);
 })();
 
 
