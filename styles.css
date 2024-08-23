@@ -94,11 +94,19 @@ body {
   font-weight: bolder;
 }
 
+.project-page-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 50%;
+  margin: 0 auto; 
+  box-sizing: border-box;
+}
 
 #qmk-badge:hover{
   opacity: 0.8;
 }
-
 
 /*TILES*/
 #setof3tiles {
