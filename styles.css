@@ -57,19 +57,23 @@ body {
 
 /*ABOUT SECTION*/ 
 #about-me{
-  margin: 0px 300px 300px 300px;
-  padding: 0px 0px 400px 0px;
-  padding-bottom: 400px;
-  align-items: center;
-  justify-content: center;
   margin: auto;
+  padding-bottom: 200px;  
   margin-top: 3rem;
   width: 1230px;
+  width: auto;
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
+#about-body {
+  display: flex;
+  flex-direction: row;
 }
  
 #about-img {
   border-radius: 50%;
-  float: right;
+  margin: 20px;
 }
 
 /*PROJECT PAGE*/
@@ -77,6 +81,9 @@ body {
   margin: auto;
   margin-top: 3rem;
   width: 1230px;
+  width: auto;
+  padding-left: 75px;
+  padding-right: 75px;
 }
 
 #project-title {
@@ -221,6 +228,69 @@ body {
   justify-content: center; 
 }
 
+
+/*Publications*/
+
+#set-of-pubs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center; 
+  padding-bottom: 400px;
+}
+
+.publication {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-start;
+  width: 800px;
+  min-width: 400px;
+  height: 200;
+  background-color: blue;
+  border-radius: 24px;
+  background-color: #ffffff;
+  margin: 10px 10px;
+  position: relative;
+  padding: 12px 12px;
+}
+
+#pub-title {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-family: 'Times New Roman', Times, serif, Geneva, Tahoma, sans-serif;
+  color:#000000;
+  text-align: center;
+}
+
+#pub-description {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 1.1rem;
+  font-style: normal;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color:#000000;
+  text-align: left;
+  /* height: 250px; */
+  margin-top: -5px;  
+}
+
+.publication:hover{
+  /*border: 4px solid #0026ff;*/
+  opacity: 80%;
+}
+
+
+
+
+
+
+
+
+
 /* Footer */
 footer {
   margin-top: 100rem;
@@ -253,12 +323,38 @@ footer {
     padding-right: 75px;
   }
 
+  .publication {
+    margin: auto;
+    margin-top: 3rem;
+    width: auto;
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+
+  #pub-title {
+    font-size: 3rem;
+  }
+
+  #pub-description {
+    font-size: 2.2rem;
+  }
+
+  #about-me {
+    margin: auto;
+    width: auto;
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+
+  #about-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   #setof3tiles {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
   .tile {
     width: 800px;
