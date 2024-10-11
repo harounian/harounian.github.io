@@ -318,6 +318,10 @@ footer {
     padding-right: 75px;
   }
 
+  #project-title {
+    font-size: 4rem;
+  }
+
   .publication {
     margin: auto;
     margin-top: 3rem;
