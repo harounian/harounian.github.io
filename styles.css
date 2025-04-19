@@ -55,6 +55,19 @@ body {
   text-decoration: underline;
 } 
 
+/*FEATURED PROJECTS*/ 
+#featured_projects {
+  margin: auto;
+  margin-top: 3rem;
+  max-width: 1300px;
+  width: 1300px;
+  width: auto;
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
+
+
 /*ABOUT SECTION*/ 
 #about-me{
   margin: auto;
@@ -82,6 +95,20 @@ body {
 }
 
 /*PROJECT PAGE*/
+#projects-page-header {
+  margin: auto;
+  margin-top: 3rem;
+  max-width: 1300px;
+  width: 1300px;
+  width: auto;
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
+#projects-page {
+  max-width: 1500px;
+}
+
 #project {
   margin: auto;
   margin-top: 3rem;
@@ -257,6 +284,16 @@ body {
   background-color: #ffffff;
   margin: 10px 10px;
   position: relative;
+}
+
+#pub-header {
+  margin: auto;
+  margin-top: 3rem;
+  max-width: 1300px;
+  width: 1300px;
+  width: auto;
+  padding-left: 75px;
+  padding-right: 75px;
 }
 
 #pub-title {
