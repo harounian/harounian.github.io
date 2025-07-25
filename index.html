@@ -4,6 +4,9 @@
   <title> JH | Home </title>
   <link rel="shortcut icon" type="image/x-icon" href="/Assets/Images/JH logo/JH PSD.png" />
   <script src="./script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -22,96 +25,82 @@
 		</div>
 	</div>  
 
-	<div id="about-me">
-		<div id="about-header">
-			<h1>About Me</h1>
-		</div>
-	  	<div id="about-body">
-			<h2 style="text-align: left;">Im a Junior studying Electrical Engineering at Wentworth Institute of Technology. 
-			I am fascinated by printed circuit boards and rf. Take a look at some of the things I have 
-			been working on recently.</h2>
-			<img src="Assets/Images/headshot.jpg" alt="headshot" width="400" id="about-img">
-	 	</div>
-	</div>
-
-	<div id="featured_projects">
-		<div id="featured_projects-header">
-			<h1>Featured Projects</h1>
+	<!-- About Me Hero Section -->
+	<div class="about-container">
+		<div class="about-hero">
+			<h1 class="about-title">About Me</h1>
+			<p class="about-subtitle">Electrical Engineering student passionate about hardware design and embedded systems</p>
 		</div>
 	</div>
+	<div class="about-container">
+		<div id="about-me">
+		  	<div id="about-body">
+				<h2 style="text-align: left;">Im a Junior studying Electrical Engineering at Wentworth Institute of Technology. 
+				I am fascinated by printed circuit boards and RF. Take a look at some of the things I have 
+				been working on recently.
+				<br><br>
+				My passion lies in designing and building hardware that bridges the gap between the digital and physical worlds. Whether it's creating custom PCBs, programming microcontrollers, or 3D printing enclosures, I love bringing ideas to life through hands-on engineering. 
+				<br><br>
+				I have experience with Arduino, Raspberry Pi, embedded C/C++, and CAD design. I'm always eager to learn new technologies and tackle challenging problems. Outside of engineering, I enjoy billiards, retro gaming, and exploring new music. 
+				<br><br>
+				I'm driven by curiosity, creativity, and a desire to make a positive impact through technology. If you'd like to connect or collaborate, feel free to reach out!
+				</h2>
+				<img src="Assets/Images/headshot.jpg" alt="headshot" width="400" id="about-img">
+		 		</div>
+		</div>
+	</div>
 
-	<div id="setof3tiles">
-		<a href="/joedeck.html" style="text-decoration: none;">
-		<div id="tile1" class="tile"> 
-		<img src="./Assets/Images/joedeck/IMG_0434.JPG" alt="joedeck" class="tile-img">
-		<h1 id="tile-header">JoeDeck</h1> 
-		<p id="tile-description">The JoeDeck is a small computer peripheral device that allows users to assign macros, or pre-programmed sequences of keystrokes that can be executed with a single button press.</p>
-		<div id="setof3tags">
-			<div class="tag"> <p>Arduino</p> </div>
-			<div class="tag"> <p>C++</p> </div>
-			<div class="tag"> <p>CAD</p> </div>
+	<!-- Featured Projects Hero Section -->
+	<div class="featured-container">
+		<div class="featured-hero">
+			<h1 class="featured-title">Featured Projects</h1>
+			<p class="featured-subtitle">A showcase of my latest engineering projects and technical achievements</p>
 		</div>
-		</div>
+	</div>
+	<div class="featured-container">
+		<div id="setof3tiles">
+			<a href="/radioflight.html" style="text-decoration: none;">
+			<div id="tile1" class="tile"> 
+			<img src="./Assets/Images/picosat/radioflight.PNG" alt="radio board" class="tile-img">
+			<h1 id="tile-header">PicoSat RF Communications Board</h1> 
+			<p id="tile-description">Radio frequency communications board for the Wentworth PocketQube Satellite. Uses impedance tuned PCB and traces.</p>
+			<div id="setof3tags">
+				<div class="tag"> <p>PCB</p> </div>
+				<div class="tag"> <p>PicoSat</p> </div>
+				<div class="tag"> <p>Soldering</p> </div>
+			</div>
+			</div>
+			</a>
+
+		<a href="/calculator.html" style="text-decoration: none;">
+			<div id="tile2" class="tile"> 
+			<img src="./Assets/Images/calculator/calculator.PNG" alt="calculator" class="tile-img">
+			<h1 id="tile-header">Calculator</h1> 
+			<p id="tile-description">Classic calculator with mechanical switches and 7-segment display. Designed custom printed circuit board with embedded micro-controller and passive components.</p>
+			
+			<div id="setof3tags">
+				<div class="tag"> <p>PCB</p> </div>
+				<div class="tag"> <p>Arduino</p> </div>
+				<div class="tag"> <p>C++</p> </div>
+			</div>
+			</div>
 		</a>
 
-	<a href="/calculator.html" style="text-decoration: none;">
-		<div id="tile2" class="tile"> 
-		<img src="./Assets/Images/calculator/calculator.PNG" alt="calculator" class="tile-img">
-		<h1 id="tile-header">Calculator</h1> 
-		<p id="tile-description">Classic calculator with mechanical switches and 7-segment display. Designed custom printed circuit board with embedded micro-controller and passive components.</p>
-		
-		<div id="setof3tags">
-			<div class="tag"> <p>PCB</p> </div>
-			<div class="tag"> <p>Arduino</p> </div>
-			<div class="tag"> <p>C++</p> </div>
+		<a href="/matrix.html" style="text-decoration: none;">
+			<div id="tile3" class="tile"> 
+			<img src="./Assets/Images/matrix/matrix.jpg" alt="matrix" class="tile-img">
+			<h1 id="tile-header">RGB LED Matrix</h1> 
+			<p id="tile-description">10x10 matrix using WS2812B LEDs. Created custom printed circuit board for ESP32 micro-controller and power electronics. Complete with 3d printed enclosure.</p>
+			
+			<div id="setof3tags">
+				<div class="tag"> <p>PCB</p> </div>
+				<div class="tag"> <p>Arduino</p> </div>
+				<div class="tag"> <p>CAD</p> </div>
+			</div>
+			</div>
+		</a>
 		</div>
-		</div>
-	</a>
-
-	<a href="/matrix.html" style="text-decoration: none;">
-		<div id="tile3" class="tile"> 
-		<img src="./Assets/Images/matrix/matrix.jpg" alt="matrix" class="tile-img">
-		<h1 id="tile-header">RGB LED Matrix</h1> 
-		<p id="tile-description">10x10 matrix using WS2812B LEDs. Created custom printed circuit board for ESP32 micro-controller and power electronics. Complete with 3d printed enclosure.</p>
-		
-		<div id="setof3tags">
-			<div class="tag"> <p>PCB</p> </div>
-			<div class="tag"> <p>Arduino</p> </div>
-			<div class="tag"> <p>CAD</p> </div>
-		</div>
-		</div>
-	</a>
 	</div>
-  
-<!--
-  <div id="set-of-skills">
-	<h1 style="margin-bottom: 50px;">Skills</h1>
-	<div id="skill1" class="skill">
-		<h2 style="color: black; text-align: center;">C++</h2>
-	</div>
-
-	<div id="skill2" class="skill">
-		<h2 style="color: black; text-align: center;">HTML<br>/CSS</h2>
-	</div>
-
-	<div id="skill3" class="skill">
-		<h2 style="color: black; text-align: center;">C++</h2>
-	</div>
-
-	<div id="skill4" class="skill">
-		<h2 style="color: black; text-align: center;">C++</h2>
-	</div>
-
-	<div id="skill5" class="skill">
-		<h2 style="color: black; text-align: center;">C++</h2>
-	</div>
-
-	<div id="skill6" class="skill">
-		<h2 style="color: black; text-align: center;">C++</h2>
-	</div>
-  </div>
--->
-
   </body>
 
 

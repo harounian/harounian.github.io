@@ -12,12 +12,3 @@ const writeAnimated = async (link, navLink) => {
     await writeAnimated('Publications', navbarLinks[1]);
     await writeAnimated('Other', navbarLinks[2]);
 })();
-
-
-/* Alerts and
-const result = prompt('are you a pussy? y or n');
-
-/*if (result === 'y') {
-    alert(' i knew it ');
-} else alert('nah ur lying');
-*/

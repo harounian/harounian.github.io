@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title> JH | Macropads </title>
+  <title> JH | Macropad </title>
   <link rel="shortcut icon" type="image/x-icon" href="/Assets/Images/JH logo/JH PSD.png" />
   <script src="./script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -22,24 +25,77 @@
 		</div>
 	</div> 
 
-    
-      <div id="project">
-        <h1 id="project-title">Macropads</h1>
-       
-        <h2 id="section-header">What is it?</h2>
-        <p id="project-text">A macropad is a compact, customizable input device featuring multiple programmable keys. It allows users to assign complex macros, keyboard shortcuts, or even specific scripts to individual buttons, making it useful for tasks like video editing, gaming, or automation in programming.</p>
-        <br>
-
-        <h2 id="section-header">3x3</h2>
-        <img src="./Assets/Images/macropad/IMG_20220221_222240.jpg" alt="3x3" class="project-page-image"> 
-        <img src="./Assets/Images/macropad/IMG_20220221_222244.jpg" alt="3x3" class="project-page-image"> 
-        <img src="./Assets/Images/macropad/IMG_20220221_190046.jpg" alt="3x3" class="project-page-image">  
-        
-        <h2 id="section-header">4x4</h2>
-        <img src="./Assets/Images/macropad/IMG_20211004_154252.jpg" alt="4x4" class="project-page-image">
-        <img src="./Assets/Images/macropad/IMG_20211004_154305.jpg" alt="4x4" class="project-page-image">
-        <img src="./Assets/Images/macropad/IMG_20211004_165811.jpg" alt="4x4" class="project-page-image">      
+  <!-- Hero Section -->
+  <div class="project-container">
+    <div id="project-hero">
+      <div class="hero-content">
+        <h1 class="hero-title">Macropad</h1>
+        <p class="hero-subtitle">Custom mechanical keyboard with programmable macros and RGB lighting</p>
+        <a href="./projects.html" class="back-button">← Back to Projects</a>
       </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="project-container">
+    <!-- Featured Image -->
+    <div class="featured-image-section">
+      <img src="./Assets/Images/macropad/IMG_20220221_222302_Bokeh.jpg" alt="Macropad" class="hero-image">
+    </div>
+
+    <!-- Project Details -->
+    <div class="project-sections">
+      <div class="content-card">
+        <h2 class="section-title">Description</h2>
+        <p class="project-text">A custom mechanical keyboard designed for productivity and gaming. Features programmable macros, RGB lighting, and a compact form factor. The project includes custom PCB design, 3D printed case, and QMK firmware for complete customization.</p>
+      </div>
+
+      <div class="content-card">
+        <h2 class="section-title">Technical Specifications</h2>
+        <div class="specs-grid">
+          <div class="spec-item">
+            <h3>Microcontroller</h3>
+            <p>Arduino Pro Micro</p>
+          </div>
+          <div class="spec-item">
+            <h3>Switches</h3>
+            <p>Mechanical Cherry MX</p>
+          </div>
+          <div class="spec-item">
+            <h3>Firmware</h3>
+            <p>QMK</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h2 class="section-title">Features</h2>
+        <ul class="features-list">
+          <li>Programmable macros</li>
+          <li>RGB lighting</li>
+          <li>Custom PCB design</li>
+          <li>3D printed case</li>
+          <li>QMK firmware</li>
+        </ul>
+      </div>
+
+      <!-- Skills/Tags -->
+      <div class="content-card">
+        <h2 class="section-title">Technologies Used</h2>
+        <div class="skills-container">
+          <div class="skill-tag">Arduino</div>
+          <div class="skill-tag">QMK</div>
+          <div class="skill-tag">PCB Design</div>
+          <div class="skill-tag">CAD</div>
+          <div class="skill-tag">3D Printing</div>
+          <div class="skill-tag">C++</div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
   </body>
 
   <footer class="footer">

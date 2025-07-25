@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title> JH | Motorized Curtains </title>
+  <title> JH | Automated Curtains </title>
   <link rel="shortcut icon" type="image/x-icon" href="/Assets/Images/JH logo/JH PSD.png" />
   <script src="./script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -22,26 +25,82 @@
 		</div>
 	</div> 
 
-    
-      <div id="project">
-        <h1 id="project-title">Motorized Curtains</h1>
+  <!-- Hero Section -->
+  <div class="project-container">
+    <div id="project-hero">
+      <div class="hero-content">
+        <h1 class="hero-title">Automated Curtains</h1>
+        <p class="hero-subtitle">Smart home automation system for automated curtain control</p>
+        <a href="./projects.html" class="back-button">← Back to Projects</a>
+      </div>
+    </div>
+  </div>
 
-        <img src="./Assets/Images/curtains/curtains cad.png" alt="Curtain Controller" class="project-page-image">   
-        <img src="./Assets/Images/curtains/IMG_20210901_215957.jpg" alt="Curtain Controller" class="project-page-image">   
-        <img src="./Assets/Images/curtains/IMG_20210901_220308.jpg" alt="Curtain Controller" class="project-page-image">   
+  <!-- Main Content -->
+  <div class="project-container">
+    <!-- Featured Image -->
+    <div class="featured-image-section">
+      <img src="./Assets/Images/curtains/curtains cad.png" alt="Automated Curtains" class="hero-image">
+    </div>
 
-        <h2 id="section-header">Description</h2>
-        <p id="project-text">This circuit board serves as the backbone of communications for the Wentworth PocketQube satellite. It uses radio frequency signal to communicate with ground stations on Earth. It uses the communication protocol, SPI to interact woth the satellite's STM32 microcontroller. It implements a SX1278 radio transciever as well as a low noise amplifier, power amplifier, and RF switch.</p>
-        <br>
-        <h2 id="section-header">MCU</h2>
-        <p id="project-text">Powered by an ESP8266</p>
-        <br>
-        <h2 id="section-header">Features</h2>
-        <p id="project-text">-L298N H-Bridge<br>-3D printed enclosure and motor mount<br>-WiFi controllable</p>
-        <br>
+    <!-- Project Details -->
+    <div class="project-sections">
+      <div class="content-card">
+        <h2 class="section-title">Description</h2>
+        <p class="project-text">Designed and built an automated curtain system for smart home automation. The system uses stepper motors, Arduino control, and custom mechanical components to provide smooth curtain operation. Features remote control capability and programmable schedules.</p>
       </div>
 
-      
+      <div class="content-card">
+        <h2 class="section-title">Technical Specifications</h2>
+        <div class="specs-grid">
+          <div class="spec-item">
+            <h3>Motor</h3>
+            <p>Stepper motor</p>
+          </div>
+          <div class="spec-item">
+            <h3>Control</h3>
+            <p>Arduino</p>
+          </div>
+          <div class="spec-item">
+            <h3>Mechanical</h3>
+            <p>Custom design</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h2 class="section-title">Features</h2>
+        <ul class="features-list">
+          <li>Automated operation</li>
+          <li>Remote control</li>
+          <li>Programmable schedules</li>
+          <li>Custom mechanical design</li>
+          <li>Stepper motor control</li>
+        </ul>
+      </div>
+
+      <!-- Skills/Tags -->
+      <div class="content-card">
+        <h2 class="section-title">Technologies Used</h2>
+        <div class="skills-container">
+          <div class="skill-tag">Arduino</div>
+          <div class="skill-tag">Stepper Motor</div>
+          <div class="skill-tag">CAD</div>
+          <div class="skill-tag">Mechanical Design</div>
+          <div class="skill-tag">Home Automation</div>
+          <div class="skill-tag">C++</div>
+        </div>
+      </div>
+
+      <!-- 3D Model -->
+      <div class="content-card">
+        <h2 class="section-title">3D Model</h2>
+        <div class="model-container">
+          <iframe src="https://gmail1014762.autodesk360.com/shares/public/SH512d4QTec90decfa6e5da11c3b76f816?mode=embed&ui=min&toolbar=0&nav=0&view=0" width="100%" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" frameborder="0"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
 
   </body>
 

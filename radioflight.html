@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title> JH | PicoSat </title>
+  <title> JH | PicoSat RF Communications Board </title>
   <link rel="shortcut icon" type="image/x-icon" href="/Assets/Images/JH logo/JH PSD.png" />
   <script src="./script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -22,20 +25,76 @@
 		</div>
 	</div> 
 
-    
-      <div id="project">
-        <h1 id="project-title">PicoSat Radio Frequency Communications Flight Board</h1>
+  <!-- Hero Section -->
+  <div class="project-container">
+    <div id="project-hero">
+      <div class="hero-content">
+        <h1 class="hero-title">PicoSat RF Communications Board</h1>
+        <p class="hero-subtitle">Radio frequency communications system for Wentworth PocketQube Satellite</p>
+        <a href="./projects.html" class="back-button">← Back to Projects</a>
+      </div>
+    </div>
+  </div>
 
-        <img src="./Assets/Images/picosat/radioflight.PNG" alt="Radio Flight" class="project-page-image">   
+  <!-- Main Content -->
+  <div class="project-container">
+    <!-- Featured Image -->
+    <div class="featured-image-section">
+      <img src="./Assets/Images/picosat/radioflight.PNG" alt="PicoSat RF Board" class="hero-image">
+    </div>
 
-        <h2 id="section-header">Description</h2>
-        <p id="project-text">This circuit board serves as the backbone of communications for the Wentworth PocketQube satellite. It uses radio frequency signal to communicate with ground stations on Earth. It uses the communication protocol, SPI to interact woth the satellite's STM32 microcontroller. It implements a SX1278 radio transciever as well as a low noise amplifier, power amplifier, and RF switch.</p>
-        <br>
-        <br>
-        <br>
+    <!-- Project Details -->
+    <div class="project-sections">
+      <div class="content-card">
+        <h2 class="section-title">Description</h2>
+        <p class="project-text">Designed and developed a radio frequency communications board for the Wentworth Institute of Technology PocketQube satellite project. The board features impedance-tuned PCB traces and antenna design for optimal RF performance in space applications.</p>
       </div>
 
-      
+      <div class="content-card">
+        <h2 class="section-title">Technical Specifications</h2>
+        <div class="specs-grid">
+          <div class="spec-item">
+            <h3>Frequency</h3>
+            <p>UHF/VHF bands</p>
+          </div>
+          <div class="spec-item">
+            <h3>Design</h3>
+            <p>Impedance-tuned PCB</p>
+          </div>
+          <div class="spec-item">
+            <h3>Application</h3>
+            <p>PocketQube satellite</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h2 class="section-title">Features</h2>
+        <ul class="features-list">
+          <li>Impedance-tuned traces</li>
+          <li>Space-grade components</li>
+          <li>Custom antenna design</li>
+          <li>RF optimization</li>
+          <li>Satellite communications</li>
+        </ul>
+      </div>
+
+      <!-- Skills/Tags -->
+      <div class="content-card">
+        <h2 class="section-title">Technologies Used</h2>
+        <div class="skills-container">
+          <div class="skill-tag">RF Design</div>
+          <div class="skill-tag">PCB Design</div>
+          <div class="skill-tag">Antenna Design</div>
+          <div class="skill-tag">Satellite</div>
+          <div class="skill-tag">Impedance Matching</div>
+          <div class="skill-tag">Space Systems</div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
 
   </body>
 

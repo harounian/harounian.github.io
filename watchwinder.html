@@ -4,6 +4,9 @@
   <title> JH | Watch Winder </title>
   <link rel="shortcut icon" type="image/x-icon" href="/Assets/Images/JH logo/JH PSD.png" />
   <script src="./script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -22,23 +25,83 @@
 		</div>
 	</div> 
 
-    
-      <div id="project">
-        <h1 id="project-title">Watch Winder</h1>
-        <img src="./Assets/Images/watchwinder/winder.PNG" alt="front" class="project-page-image">
-        <h2 id="section-header">Description</h2>
-        <p id="project-text">A watch winder is a device that not only holds and displays an automatic watch, but also spins it, which turns the watches rotor, storing energy in the mainspring.</p>
-        <br>
-        <br>
-        <h2 id="section-header">MCU</h2>
-        <p id="project-text">Powered by an Arduino Pro-Mini</p>
-        <br>
-        <br>
-        <h2 id="section-header">Features</h2>
-        <p id="project-text">-Different operation modes selectable with momentary push button<br>-Stepper motor<br>-C++</p>
-        <br>
-        <br>
+  <!-- Hero Section -->
+  <div class="project-container">
+    <div id="project-hero">
+      <div class="hero-content">
+        <h1 class="hero-title">Watch Winder</h1>
+        <p class="hero-subtitle">Automated watch winding system with custom motor control</p>
+        <a href="./projects.html" class="back-button">← Back to Projects</a>
       </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="project-container">
+    <!-- Featured Image -->
+    <div class="featured-image-section">
+      <img src="./Assets/Images/watchwinder/winder.PNG" alt="Watch Winder" class="hero-image">
+    </div>
+
+    <!-- Project Details -->
+    <div class="project-sections">
+      <div class="content-card">
+        <h2 class="section-title">Description</h2>
+        <p class="project-text">Built an automated watch winder system that keeps automatic watches running when not worn. The device features precise motor control, customizable winding patterns, and a sleek enclosure design. Perfect for maintaining the power reserve of automatic timepieces.</p>
+      </div>
+
+      <div class="content-card">
+        <h2 class="section-title">Technical Specifications</h2>
+        <div class="specs-grid">
+          <div class="spec-item">
+            <h3>Motor</h3>
+            <p>Stepper motor</p>
+          </div>
+          <div class="spec-item">
+            <h3>Control</h3>
+            <p>Arduino</p>
+          </div>
+          <div class="spec-item">
+            <h3>Enclosure</h3>
+            <p>3D printed</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h2 class="section-title">Features</h2>
+        <ul class="features-list">
+          <li>Automated winding</li>
+          <li>Customizable patterns</li>
+          <li>Precise motor control</li>
+          <li>3D printed enclosure</li>
+          <li>Power management</li>
+        </ul>
+      </div>
+
+      <!-- Skills/Tags -->
+      <div class="content-card">
+        <h2 class="section-title">Technologies Used</h2>
+        <div class="skills-container">
+          <div class="skill-tag">Arduino</div>
+          <div class="skill-tag">Stepper Motor</div>
+          <div class="skill-tag">CAD</div>
+          <div class="skill-tag">3D Printing</div>
+          <div class="skill-tag">Motor Control</div>
+          <div class="skill-tag">C++</div>
+        </div>
+      </div>
+
+      <!-- 3D Model -->
+      <div class="content-card">
+        <h2 class="section-title">3D Model</h2>
+        <div class="model-container">
+          <iframe src="https://gmail1014762.autodesk360.com/shares/public/SH512d4QTec90decfa6e5da11c3b76f816?mode=embed&ui=min&toolbar=0&nav=0&view=0" width="100%" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" frameborder="0"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
   </body>
 
   <footer class="footer">

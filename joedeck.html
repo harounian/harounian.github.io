@@ -4,6 +4,9 @@
   <title> JH | JoeDeck </title>
   <link rel="shortcut icon" type="image/x-icon" href="/Assets/Images/JH logo/JH PSD.png" />
   <script src="./script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -22,35 +25,89 @@
 		</div>
 	</div> 
 
-    
-      <div id="project">
-        <h1 id="project-title">JoeDeck</h1>
-        <img src="./Assets/Images/joedeck/IMG_0434.JPG" alt="JoeDeck" class="project-page-image">   
-        <h2 id="section-header">Description</h2>
-        <p id="project-text">The JoeDeck is a small computer peripheral device that allows users to assign macros, or pre-programmed sequences of keystrokes that can be executed with a single button press. These macros can be used for a variety of purposes, such as in-game shortcuts or automating repetitive tasks. In addition to this, it gives you the ability to adjust the volume levels of your programs and output/input devices, so you can mix/balance them to your heart's content. It's commonly used by gamers and programmers as a way to improve their productivity and efficiency.</p>
-        <br>
-        <br>
-        <h2 id="section-header">MCU</h2>
-        <p id="project-text">Powered by an Arduino Pro-Micro and an Arduino Nano</p>
-        <br>
-        <br>
-        <h2 id="section-header">Features</h2>
-        <p id="project-text">-Full qmk compatibility<br>-12 fully reprogrammable keys<br>-2 rotary encoders<br>-OLED screen<br>-USB-C port</p>
-        <br>
-        <br>
+  <!-- Hero Section -->
+  <div class="project-container">
+    <div id="project-hero">
+      <div class="hero-content">
+        <h1 class="hero-title">JoeDeck</h1>
+        <p class="hero-subtitle">A customizable macro keyboard with volume control and OLED display</p>
+        <a href="./projects.html" class="back-button">← Back to Projects</a>
+      </div>
+    </div>
+  </div>
 
-        <iframe src="https://gmail1014762.autodesk360.com/shares/public/SH512d4QTec90decfa6e5da11c3b6b76f816?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" style="align-self: center;"></iframe>
+  <!-- Main Content -->
+  <div class="project-container">
+    <!-- Featured Image -->
+    <div class="featured-image-section">
+      <img src="./Assets/Images/joedeck/IMG_0434.JPG" alt="JoeDeck" class="hero-image">
+    </div>
+
+    <!-- Project Details -->
+    <div class="project-sections">
+      <div class="content-card">
+        <h2 class="section-title">Description</h2>
+        <p class="project-text">The JoeDeck is a small computer peripheral device that allows users to assign macros, or pre-programmed sequences of keystrokes that can be executed with a single button press. These macros can be used for a variety of purposes, such as in-game shortcuts or automating repetitive tasks. In addition to this, it gives you the ability to adjust the volume levels of your programs and output/input devices, so you can mix/balance them to your heart's content. It's commonly used by gamers and programmers as a way to improve their productivity and efficiency.</p>
       </div>
 
-      
-
-
-      <div id="qmk-badge" style="display: flex; justify-content: center; margin: 3rem auto;">
-        <a href="https://github.com/qmk/qmk_firmware">
-          <img src="Assets/Images/qmkbadge.svg" alt="QMK Badge" width="300">
-        </a>
+      <div class="content-card">
+        <h2 class="section-title">Technical Specifications</h2>
+        <div class="specs-grid">
+          <div class="spec-item">
+            <h3>Microcontroller</h3>
+            <p>Arduino Pro-Micro and Arduino Nano</p>
+          </div>
+          <div class="spec-item">
+            <h3>Connectivity</h3>
+            <p>USB-C port</p>
+          </div>
+          <div class="spec-item">
+            <h3>Display</h3>
+            <p>OLED screen</p>
+          </div>
+        </div>
       </div>
-      
+
+      <div class="content-card">
+        <h2 class="section-title">Features</h2>
+        <ul class="features-list">
+          <li>Full QMK compatibility</li>
+          <li>12 fully reprogrammable keys</li>
+          <li>2 rotary encoders</li>
+          <li>OLED screen</li>
+          <li>USB-C port</li>
+        </ul>
+      </div>
+
+      <!-- Skills/Tags -->
+      <div class="content-card">
+        <h2 class="section-title">Technologies Used</h2>
+        <div class="skills-container">
+          <div class="skill-tag">Arduino</div>
+          <div class="skill-tag">C++</div>
+          <div class="skill-tag">QMK</div>
+          <div class="skill-tag">CAD</div>
+          <div class="skill-tag">3D Printing</div>
+          <div class="skill-tag">PCB Design</div>
+        </div>
+      </div>
+
+      <!-- 3D Model -->
+      <div class="content-card">
+        <h2 class="section-title">3D Model</h2>
+        <div class="model-container">
+          <iframe src="https://gmail1014762.autodesk360.com/shares/public/SH512d4QTec90decfa6e5da11c3b6b76f816?mode=embed&ui=min&toolbar=0&nav=0&view=0&hideToolbar=1&hideNavigation=1&hideViewControls=1&hideFusionButton=1&embedMode=viewer&noToolbar=1&noNavigation=1&noViewControls=1&noFusionButton=1" width="100%" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" frameborder="0"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- QMK Badge -->
+    <div class="qmk-section">
+      <a href="https://github.com/qmk/qmk_firmware" class="qmk-link">
+        <img src="Assets/Images/qmkbadge.svg" alt="QMK Badge" class="qmk-badge">
+      </a>
+    </div>
+  </div>
 
   </body>
 

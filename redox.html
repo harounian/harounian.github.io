@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title> JH | Redox </title>
+  <title> JH | Redox Keyboard </title>
   <link rel="shortcut icon" type="image/x-icon" href="/Assets/Images/JH logo/JH PSD.png" />
   <script src="./script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -21,26 +24,78 @@
 		</li>
 		</div>
 	</div> 
-    
-      <div id="project">
-        <h1 id="project-title">RetroPie Game Console</h1>
 
-        <img src="./Assets/Images/redox/IMG_20211202_190252.jpg" alt="Console" class="project-page-image">   
-        <img src="./Assets/Images/redox/IMG_20211202_204914.jpg" alt="Console" class="project-page-image">   
-        <img src="./Assets/Images/redox/IMG_20211202_205052.jpg" alt="Console" class="project-page-image">   
-        <img src="./Assets/Images/redox/IMG_20211207_161254.jpg" alt="Console" class="project-page-image">   
-        <img src="./Assets/Images/redox/IMG_20211207_161329.jpg" alt="Console" class="project-page-image">   
-        <img src="./Assets/Images/redox/IMG_20220407_211812.jpg" alt="Console" class="project-page-image"> 
-
-
-        <h2 id="section-header">Description</h2>
-        <p id="project-text">Ergonomic Keyboard</p>
-        <br>
-        <h2 id="section-header">Features</h2>
-        <p id="project-text">-2x Arduino Pro-Micro<br>-3D printed enclosure</p>
-        <br>
-        <br>
+  <!-- Hero Section -->
+  <div class="project-container">
+    <div id="project-hero">
+      <div class="hero-content">
+        <h1 class="hero-title">Redox Keyboard</h1>
+        <p class="hero-subtitle">Split mechanical keyboard with ergonomic design and QMK firmware</p>
+        <a href="./projects.html" class="back-button">← Back to Projects</a>
       </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="project-container">
+    <!-- Featured Image -->
+    <div class="featured-image-section">
+      <img src="./Assets/Images/redox/IMG_20211207_161329.jpg" alt="Redox Keyboard" class="hero-image">
+    </div>
+
+    <!-- Project Details -->
+    <div class="project-sections">
+      <div class="content-card">
+        <h2 class="section-title">Description</h2>
+        <p class="project-text">Built a Redox split mechanical keyboard featuring an ergonomic design that promotes better typing posture. The keyboard uses Cherry MX switches and runs QMK firmware for complete customization. The split design allows for natural hand positioning and reduced strain during extended typing sessions.</p>
+      </div>
+
+      <div class="content-card">
+        <h2 class="section-title">Technical Specifications</h2>
+        <div class="specs-grid">
+          <div class="spec-item">
+            <h3>Layout</h3>
+            <p>Split ergonomic</p>
+          </div>
+          <div class="spec-item">
+            <h3>Switches</h3>
+            <p>Cherry MX</p>
+          </div>
+          <div class="spec-item">
+            <h3>Firmware</h3>
+            <p>QMK</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h2 class="section-title">Features</h2>
+        <ul class="features-list">
+          <li>Split ergonomic design</li>
+          <li>Mechanical switches</li>
+          <li>QMK firmware</li>
+          <li>Custom keymaps</li>
+          <li>Improved typing posture</li>
+        </ul>
+      </div>
+
+      <!-- Skills/Tags -->
+      <div class="content-card">
+        <h2 class="section-title">Technologies Used</h2>
+        <div class="skills-container">
+          <div class="skill-tag">QMK</div>
+          <div class="skill-tag">Mechanical Switches</div>
+          <div class="skill-tag">Soldering</div>
+          <div class="skill-tag">Ergonomics</div>
+          <div class="skill-tag">Keyboard Design</div>
+          <div class="skill-tag">C++</div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
   </body>
 
   <footer class="footer">

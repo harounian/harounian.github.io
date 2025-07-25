@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title> JH | PicoSat </title>
+  <title> JH | PicoSat Antenna Tuning Board </title>
   <link rel="shortcut icon" type="image/x-icon" href="/Assets/Images/JH logo/JH PSD.png" />
   <script src="./script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -22,24 +25,75 @@
 		</div>
 	</div> 
 
-    
-      <div id="project">
-        <h1 id="project-title">PicoSat Antenna Tuning Board</h1>
+  <!-- Hero Section -->
+  <div class="project-container">
+    <div id="project-hero">
+      <div class="hero-content">
+        <h1 class="hero-title">PicoSat Antenna Tuning Board</h1>
+        <p class="hero-subtitle">Prototype circuit board for testing and tuning tape measure dipole antenna performance</p>
+        <a href="./projects.html" class="back-button">← Back to Projects</a>
+      </div>
+    </div>
+  </div>
 
-        <img src="./Assets/Images/picosat/antenna2.PNG" alt="3D" class="project-page-image">
+  <!-- Main Content -->
+  <div class="project-container">
+    <!-- Featured Image -->
+    <div class="featured-image-section">
+      <img src="./Assets/Images/picosat/antenna2.PNG" alt="Antenna Tuning Board 3D" class="hero-image">
+    </div>
 
-        <img src="./Assets/Images/picosat/antenna1.PNG" alt="KiCad" class="project-page-image">    
-
-        <h2 id="section-header">Description</h2>
-        <p id="project-text">I created an antenna prototype circuit board to test and tune the performance of a tape measure dipole antenna. This board has 4 different antenna pad layouts to determine which setup works best for our satellite. I varied the area of the pad as well as the distance between the pads, which changes the characteristics of the antenna. A “T” network of a resistor, capacitor and inductor was used to tune the impedance of our circuit to 50 ohms, which is the impedance of our radio communications circuit. Also included is a balun that creates a balanced, differential signal for the antenna. Lastly, is a UFL connector to connect a vector network analyzer, to test the antenna’s performance.</p>
-        <br>
-        <br>
-        <p id="project-text">This circuit board is featured in my research paper "The Design and Development of a Low SWaP Communications System for a 1P Cube Satellite".</p>
-        <br>
-        <br>
+    <!-- Project Details -->
+    <div class="project-sections">
+      <div class="content-card">
+        <h2 class="section-title">Description</h2>
+        <p class="project-text">I created an antenna prototype circuit board to test and tune the performance of a tape measure dipole antenna. This board has 4 different antenna pad layouts to determine which setup works best for our satellite. I varied the area of the pad as well as the distance between the pads, which changes the characteristics of the antenna. A "T" network of a resistor, capacitor and inductor was used to tune the impedance of our circuit to 50 ohms, which is the impedance of our radio communications circuit. Also included is a balun that creates a balanced, differential signal for the antenna. Lastly, is a UFL connector to connect a vector network analyzer, to test the antenna's performance.</p>
+        <p class="project-text">This circuit board is featured in my research paper "The Design and Development of a Low SWaP Communications System for a 1P Cube Satellite".</p>
       </div>
 
-      
+      <div class="content-card">
+        <h2 class="section-title">Technical Specifications</h2>
+        <div class="specs-grid">
+          <div class="spec-item">
+            <h3>Antenna Type</h3>
+            <p>Tape measure dipole</p>
+          </div>
+          <div class="spec-item">
+            <h3>Impedance</h3>
+            <p>50 ohms tuned</p>
+          </div>
+          <div class="spec-item">
+            <h3>Layouts</h3>
+            <p>4 different pad configurations</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h2 class="section-title">Features</h2>
+        <ul class="features-list">
+          <li>4 different antenna pad layouts</li>
+          <li>T-network impedance matching</li>
+          <li>Balun for balanced signals</li>
+          <li>UFL connector for testing</li>
+          <li>Vector network analyzer compatible</li>
+        </ul>
+      </div>
+
+      <!-- Skills/Tags -->
+      <div class="content-card">
+        <h2 class="section-title">Technologies Used</h2>
+        <div class="skills-container">
+          <div class="skill-tag">RF Design</div>
+          <div class="skill-tag">PCB Design</div>
+          <div class="skill-tag">Antenna Design</div>
+          <div class="skill-tag">Impedance Matching</div>
+          <div class="skill-tag">Satellite</div>
+          <div class="skill-tag">Research</div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   </body>
 
