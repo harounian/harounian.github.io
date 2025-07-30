@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title> JH | RGB LED Matrix </title>
+  <title> JH | PROJECT TITLE </title>
   <link rel="shortcut icon" type="image/x-icon" href="/Assets/Images/JH logo/JH PSD.png" />
   <script src="./script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -22,27 +25,118 @@
 		</div>
 	</div> 
 
-    
-      <div id="project">
-        <h1 id="project-title">RGB LED Matrix</h1>
-        <h2 id="section-header">Description</h2>
-        <p id="project-text">This project features a 10x10 LED matrix using WS2812B LEDs. I designed and fabricated a custom printed circuit board specifically for an ESP32 micro-controller, which serves as the brain of the project, handling the control and communication with the LEDs. Additionally, the PCB includes power electronics to ensure stable and efficient power delivery to the LED matrix. To complete the project, I designed and 3D printed a custom enclosure, providing a sleek and protective housing for the electronics.</p>
-        <br>
-        <br>
-        <h2 id="section-header">MCU</h2>
-        <p id="project-text">Powered by an ESP32</p>
-        <br>
-        <br>
-        <h2 id="section-header">Features</h2>
-        <p id="project-text">-100 LEDS<br>-WiFi controllable</p>
-        <br>
-        <br>
 
+  <!-- Hero Section -->
+  <div class="project-container">
+    <div id="project-hero">
+      <div class="hero-content">
+        <h1 class="hero-title">[PROJECT NAME]</h1>
+        <p class="hero-subtitle">[Brief description of the project - one sentence that captures the essence]</p>
+        <a href="./projects.html" class="back-button">← Back to Projects</a>
+      </div>
+    </div>
+  </div>
 
-  </body>
+  <!-- Main Content -->
+  <div class="project-container">
+    <!-- Featured Image -->
+    <div class="featured-image-section">
+      <img src="./Assets/Images/calculator/calculator.PNG" alt="[Project Name]" class="hero-image">
+    </div>
 
-  <footer class="footer">
+    <!-- Project Details -->
+    <div class="project-sections">
+      <div class="content-card">
+        <h2 class="section-title">Description</h2>
+        <p class="project-text">[Detailed project description - 2-3 paragraphs explaining what the project is, why you built it, and what problems it solves. Include technical details, challenges overcome, and the overall impact or outcome.]</p>
+      </div>
+
+      <div class="content-card">
+        <h2 class="section-title">Technical Specifications</h2>
+        <div class="specs-grid">
+          <div class="spec-item">
+            <h3>[Specification Category]</h3>
+            <p>[Specification Value]</p>
+          </div>
+          <div class="spec-item">
+            <h3>[Specification Category]</h3>
+            <p>[Specification Value]</p>
+          </div>
+          <div class="spec-item">
+            <h3>[Specification Category]</h3>
+            <p>[Specification Value]</p>
+          </div>
+          <!-- Add more spec items as needed -->
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h2 class="section-title">Features</h2>
+        <ul class="features-list">
+          <li>[Key feature 1]</li>
+          <li>[Key feature 2]</li>
+          <li>[Key feature 3]</li>
+          <li>[Key feature 4]</li>
+          <li>[Key feature 5]</li>
+          <!-- Add more features as needed -->
+        </ul>
+      </div>
+
+      <!-- Skills/Tags -->
+      <div class="content-card">
+        <h2 class="section-title">Technologies Used</h2>
+        <div class="skills-container">
+          <div class="skill-tag">[Technology 1]</div>
+          <div class="skill-tag">[Technology 2]</div>
+          <div class="skill-tag">[Technology 3]</div>
+          <div class="skill-tag">[Technology 4]</div>
+          <div class="skill-tag">[Technology 5]</div>
+          <div class="skill-tag">[Technology 6]</div>
+          <!-- Add more technologies as needed -->
+        </div>
+      </div>
+
+      <!-- Optional: Additional Images Section -->
+      <div class="content-card">
+        <h2 class="section-title">Gallery</h2>
+        <div class="featured-image-section">
+          <img src="./Assets/Images/[project-folder]/[detail-image-1].jpg" alt="[Project Detail]" class="project-page-image">
+        </div>
+        <div class="featured-image-section">
+          <img src="./Assets/Images/[project-folder]/[detail-image-2].jpg" alt="[Project Detail]" class="project-page-image">
+        </div>
+        <!-- Add more images as needed -->
+      </div>
+
+      <!-- Optional: 3D Model Section -->
+      <div class="content-card">
+        <h2 class="section-title">3D Model</h2>
+        <div class="model-container">
+          <iframe src="[3D model embed URL]" width="100%" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" frameborder="0"></iframe>
+        </div>
+      </div>
+
+      <!-- Optional: Code/Technical Details Section -->
+      <div class="content-card">
+        <h2 class="section-title">Technical Details</h2>
+        <p class="project-text">[Additional technical information, design decisions, challenges faced, lessons learned, or implementation details that would be interesting to other developers or engineers.]</p>
+      </div>
+
+      <!-- Optional: Future Improvements Section -->
+      <div class="content-card">
+        <h2 class="section-title">Future Improvements</h2>
+        <ul class="features-list">
+          <li>[Potential improvement 1]</li>
+          <li>[Potential improvement 2]</li>
+          <li>[Potential improvement 3]</li>
+          <!-- Add more potential improvements -->
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <footer>
     <span>Copyright © Joseph Harounian 2025</span>
   </footer>
-  
+</body>
 </html>

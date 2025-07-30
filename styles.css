@@ -44,11 +44,14 @@ body {
 #logo {
   height: 40px;
   width: 40px;
-  transition: transform 0.3s ease;
 }
 
 #logo:hover {
   transform: scale(1.05);
+}
+
+.transitions-enabled #logo {
+  transition: transform 0.3s ease;
 }
 
 .navbar-link {
@@ -60,19 +63,20 @@ body {
   text-decoration: none;
   font-size: 0.9rem;
   font-weight: 500;
-  transition: all 0.3s ease;
   position: relative;
   padding: 0.3rem 0.7rem;
   border-radius: 8px;
   background: rgba(255,255,255,0.05);
   backdrop-filter: blur(5px);
   border: 1px solid rgba(255,255,255,0.1);
+  transition: all 0.3s ease;
 }
 
 .navbar-link-text:hover {
   background: rgba(255,255,255,0.1);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+  border-color: rgba(255,255,255,0.2);
 }
 
 #featured_projects {
@@ -583,11 +587,14 @@ footer {
 }
 
 .hero-image {
+  display: block;
+  margin: 0 auto;
   width: 100%;
-  max-width: 800px;
+  max-width: 1400px;
   height: auto;
   border-radius: 16px;
   box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  box-sizing: border-box;
 }
 
 .project-sections {
@@ -682,26 +689,20 @@ footer {
 .model-container {
   position: relative;
   width: 100%;
-  height: 400px;
+  height: 480px;
   border-radius: 16px;
   overflow: hidden;
   background: rgba(255,255,255,0.05);
   border: 1px solid rgba(255,255,255,0.1);
 }
 
-.model-container::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(45deg, rgba(255,255,255,0.1) 25%, transparent 25%), 
-              linear-gradient(-45deg, rgba(255,255,255,0.1) 25%, transparent 25%), 
-              linear-gradient(45deg, transparent 75%, rgba(255,255,255,0.1) 75%), 
-              linear-gradient(-45deg, transparent 75%, rgba(255,255,255,0.1) 75%);
-  background-size: 20px 20px;
-  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+
+
+.model-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 16px;
 }
 
 .skills-container {
@@ -1096,6 +1097,9 @@ footer {
   
   .navbar-link a:hover {
     text-decoration: underline !important;
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+    border-color: rgba(255,255,255,0.2);
   }
 
   #project {
@@ -1253,6 +1257,10 @@ footer {
     box-sizing: border-box;
   }
   
+  .model-container {
+    height: 400px;
+  }
+  
   .hero-image {
     display: block;
     margin: 24px auto;
@@ -1360,6 +1368,10 @@ footer {
     height: auto;
     border-radius: 16px;
     box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  }
+  
+  .model-container {
+    height: 350px;
   }
   
   .content-card {
@@ -1493,6 +1505,10 @@ footer {
     height: auto;
     border-radius: 16px;
     box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  }
+  
+  .model-container {
+    height: 300px;
   }
 }
 

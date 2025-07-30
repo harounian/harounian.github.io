@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title> JH | RGB LED Matrix </title>
+  <title> JH | Bike Horn </title>
   <link rel="shortcut icon" type="image/x-icon" href="/Assets/Images/JH logo/JH PSD.png" />
   <script src="./script.js" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,8 +29,8 @@
   <div class="project-container">
     <div id="project-hero">
       <div class="hero-content">
-        <h1 class="hero-title">RGB LED Matrix</h1>
-        <p class="hero-subtitle">10x10 LED matrix with custom PCB design and ESP32 control</p>
+        <h1 class="hero-title">Bike Horn</h1>
+        <p class="hero-subtitle">Loud bike horn.</p>
         <a href="./projects.html" class="back-button">← Back to Projects</a>
       </div>
     </div>
@@ -40,34 +40,46 @@
   <div class="project-container">
     <!-- Featured Image -->
     <div class="featured-image-section">
-      <img src="./Assets/Images/matrix/matrix.jpg" alt="RGB LED Matrix" class="hero-image">
+      <img src="./Assets/Images/bike-horn/IMG_3272.JPG" alt="bike-horn" class="hero-image">
     </div>
 
     <div class="featured-image-section">
-      <img src="./Assets/Images/matrix/matrix-pcb.PNG" alt="RGB LED Matrix" class="hero-image">
+      <img src="./Assets/Images/bike-horn/IMG_3260.JPG" alt="bike-horn" class="hero-image">
+    </div>
+
+    <div class="featured-image-section">
+      <img src="./Assets/Images/bike-horn/IMG_3262.JPG" alt="bike-horn" class="hero-image">
+    </div>
+
+    <div class="featured-image-section">
+      <img src="./Assets/Images/bike-horn/IMG_3264.JPG" alt="bike-horn" class="hero-image">
+    </div>
+
+    <div class="featured-image-section">
+      <img src="./Assets/Images/bike-horn/IMG_3265.JPG" alt="bike-horn" class="hero-image">
     </div>
 
     <!-- Project Details -->
     <div class="project-sections">
       <div class="content-card">
         <h2 class="section-title">Description</h2>
-        <p class="project-text">This project features a 10x10 LED matrix using WS2812B LEDs. I designed and fabricated a custom printed circuit board specifically for an ESP32 micro-controller, which serves as the brain of the project, handling the control and communication with the LEDs. Additionally, the PCB includes power electronics to ensure stable and efficient power delivery to the LED matrix. To complete the project, I designed and 3D printed a custom enclosure, providing a sleek and protective housing for the electronics.</p>
+        <p class="project-text">This bike horn uses a 555 timer to create a siren like alarm. Internal battery charges through USB-C port embedded into horn enclosure.</p>
       </div>
 
       <div class="content-card">
         <h2 class="section-title">Technical Specifications</h2>
         <div class="specs-grid">
           <div class="spec-item">
-            <h3>Microcontroller</h3>
-            <p>ESP32</p>
+            <h3>IC</h3>
+            <p>555 Timer</p>
           </div>
           <div class="spec-item">
-            <h3>LEDs</h3>
-            <p>100 WS2812B LEDs</p>
+             <h3>Battery Capacity</h3>
+             <p>250 mAh</p>
           </div>
           <div class="spec-item">
-            <h3>Connectivity</h3>
-            <p>WiFi controllable</p>
+             <h3>LiPo Charger</h3>
+             <p>TP4056</p>
           </div>
         </div>
       </div>
@@ -75,11 +87,9 @@
       <div class="content-card">
         <h2 class="section-title">Features</h2>
         <ul class="features-list">
-          <li>100 LEDs</li>
-          <li>WiFi controllable</li>
-          <li>Custom PCB design</li>
-          <li>3D printed enclosure</li>
-          <li>Power electronics</li>
+          <li>Boost convertor</li>
+          <li>USB-C</li>
+          <li>Charging status LEDs</li>
         </ul>
       </div>
 
@@ -87,21 +97,20 @@
       <div class="content-card">
         <h2 class="section-title">Technologies Used</h2>
         <div class="skills-container">
-          <div class="skill-tag">ESP32</div>
-          <div class="skill-tag">PCB Design</div>
-          <div class="skill-tag">CAD</div>
+          <div class="skill-tag">Soldering</div>
           <div class="skill-tag">3D Printing</div>
-          <div class="skill-tag">WiFi</div>
-          <div class="skill-tag">Power Electronics</div>
+          <div class="skill-tag">Multimeter</div>
+          <div class="skill-tag">Oscilloscope</div>
         </div>
       </div>
+
 
       <!-- 3D Model -->
       <div class="content-card">
         <h2 class="section-title">3D Model</h2>
-        <div class="model-container">
-          <iframe src="https://gmail1014762.autodesk360.com/shares/public/SH286ddQT78850c0d8a41f498549f7b37145?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>        </div>
-      </div>
+        <div class="model-container">  
+          <iframe src="https://gmail1014762.autodesk360.com/shares/public/SH286ddQT78850c0d8a478922820d627582c?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+        </div>
     </div>
   </div>
 
