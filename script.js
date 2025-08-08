@@ -6,6 +6,7 @@ navbarLinks[1].textContent = 'Publications';
 
 // Filter functionality
 let activeFilters = new Set();
+let originalProjectOrder = [];
 
 // Initialize filters when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
@@ -16,9 +17,12 @@ function initializeFilters() {
     const filterTagsContainer = document.getElementById('filter-tags');
     if (!filterTagsContainer) return;
 
+    // Store original project order
+    const projectTiles = document.querySelectorAll('.tile');
+    originalProjectOrder = Array.from(projectTiles);
+
     // Get all unique tags from project tiles
     const allTags = new Set();
-    const projectTiles = document.querySelectorAll('.tile');
     
     projectTiles.forEach(tile => {
         const tags = tile.querySelectorAll('.tag p');
@@ -27,8 +31,11 @@ function initializeFilters() {
         });
     });
 
-    // Create filter tag buttons
-    allTags.forEach(tagText => {
+    // Convert Set to Array and sort alphabetically
+    const sortedTags = Array.from(allTags).sort();
+
+    // Create filter tag buttons in alphabetical order
+    sortedTags.forEach(tagText => {
         const filterTag = document.createElement('div');
         filterTag.className = 'filter-tag';
         filterTag.textContent = tagText;
@@ -61,37 +68,40 @@ function toggleFilter(tagText) {
 }
 
 function filterProjects() {
-    const projectTiles = document.querySelectorAll('.tile');
     const tilesContainer = document.getElementById('setof3tiles');
     
-    let visibleCount = 0;
-    
-    projectTiles.forEach(tile => {
-        const tags = Array.from(tile.querySelectorAll('.tag p')).map(tag => tag.textContent);
-        
-        if (activeFilters.size === 0) {
-            // Show all projects when no filters are active
+    if (activeFilters.size === 0) {
+        // Restore original order when no filters are active
+        tilesContainer.innerHTML = '';
+        originalProjectOrder.forEach(tile => {
+            tilesContainer.appendChild(tile);
             tile.style.display = 'flex';
-            visibleCount++;
-        } else {
-            // Show project if it has at least one of the active filter tags
-            const hasMatchingTag = tags.some(tag => activeFilters.has(tag));
-            if (hasMatchingTag) {
-                tile.style.display = 'flex';
-                visibleCount++;
-            } else {
-                tile.style.display = 'none';
-            }
+        });
+        tilesContainer.classList.remove('grid-layout');
+        return;
+    }
+    
+    // Filter and rebuild the grid without gaps
+    const visibleTiles = [];
+    originalProjectOrder.forEach(tile => {
+        const tags = Array.from(tile.querySelectorAll('.tag p')).map(tag => tag.textContent);
+        const hasMatchingTag = tags.some(tag => activeFilters.has(tag));
+        
+        if (hasMatchingTag) {
+            visibleTiles.push(tile);
         }
     });
     
-    // Adjust container layout based on filter state
-    if (activeFilters.size > 0 && visibleCount > 0) {
-        // Use grid layout for filtered results
+    // Clear container and rebuild with only visible tiles
+    tilesContainer.innerHTML = '';
+    visibleTiles.forEach(tile => {
+        tilesContainer.appendChild(tile);
+        tile.style.display = 'flex';
+    });
+    
+    // Apply grid layout for filtered results
+    if (visibleTiles.length > 0) {
         tilesContainer.classList.add('grid-layout');
-    } else {
-        // Reset to original layout
-        tilesContainer.classList.remove('grid-layout');
     }
 }
 
