@@ -1,0 +1,42 @@
+:root {
+  color-scheme: dark;
+
+  /* Surface */
+  --bg: #08090b;
+  --bg-raised: #0e1013;
+  --bg-card: rgba(255, 255, 255, 0.035);
+  --bg-card-hover: rgba(255, 255, 255, 0.06);
+  --line: rgba(255, 255, 255, 0.09);
+  --line-strong: rgba(255, 255, 255, 0.16);
+
+  /* Ink */
+  --ink: #f2f3f5;
+  --ink-soft: rgba(242, 243, 245, 0.68);
+  --ink-faint: rgba(242, 243, 245, 0.42);
+  --ink-ghost: rgba(242, 243, 245, 0.22);
+
+  /* Accent -- signal blue, used sparingly */
+  --accent: #5b9dff;
+  --accent-bright: #8ebbff;
+  --accent-dim: rgba(91, 157, 255, 0.14);
+  --accent-line: rgba(91, 157, 255, 0.4);
+
+  /* Secondary -- copper trace, used only as a texture accent */
+  --copper: #e0a466;
+
+  /* Status */
+  --good: #59d68f;
+
+  --max-width: 1240px;
+  --header-height: 72px;
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-smooth: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-spring: cubic-bezier(0.22, 1.28, 0.36, 1);
+
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+}

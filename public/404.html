@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Joseph Harounian</title>
+  <script>
+    // GitHub Pages has no server-side rewrites, so a deep link like
+    // /projects/lna 404s at the CDN. Stash the real path and bounce to the
+    // SPA shell, which restores it (see index.html) before React Router mounts.
+    sessionStorage.redirect = location.href
+    location.replace('/')
+  </script>
+</head>
+<body></body>
+</html>

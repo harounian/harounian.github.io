@@ -1,0 +1,94 @@
+.pub-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding-bottom: clamp(3rem, 7vw, 5rem);
+}
+
+.pub-card {
+  padding: clamp(1.5rem, 3.5vw, 2.5rem);
+}
+
+.pub-card__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.1rem;
+}
+
+.pub-card__kind {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  background: var(--accent-dim);
+  color: var(--accent-bright);
+  border: 1px solid var(--accent-line);
+}
+
+.pub-card__kind--journal {
+  background: rgba(89, 214, 143, 0.14);
+  color: var(--good);
+  border-color: rgba(89, 214, 143, 0.4);
+}
+
+.pub-card__year {
+  font-size: 0.82rem;
+  color: var(--ink-faint);
+}
+
+.pub-card__title {
+  font-size: clamp(1.2rem, 2.6vw, 1.55rem);
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  line-height: 1.35;
+  margin-bottom: 1.3rem;
+}
+
+.pub-card__meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  padding: 1rem 1.1rem;
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--line);
+  margin-bottom: 1.4rem;
+}
+
+.pub-card__meta span {
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.pub-card__meta p {
+  margin-top: 0.25rem;
+  font-size: 0.9rem;
+  word-break: break-word;
+}
+
+.pub-card__abstract span {
+  display: block;
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin-bottom: 0.5rem;
+}
+
+.pub-card__abstract p {
+  color: var(--ink-soft);
+  font-size: 0.94rem;
+  line-height: 1.7;
+}
+
+.pub-card__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
